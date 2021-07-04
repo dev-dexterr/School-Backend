@@ -32,7 +32,12 @@ dependencies {
     implementation 'org.hibernate:hibernate-gradle-plugin:5.3.20.Final'
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
     implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.28.Final'
-
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.5.2'
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+    implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-maven-plugin', version: '2.5.2'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.5.2'
+    testImplementation group: 'org.springframework.security', name: 'spring-security-test', version: '5.4.7'
 }
 
 test {

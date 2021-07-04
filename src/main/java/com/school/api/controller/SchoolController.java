@@ -16,10 +16,15 @@ import java.util.List;
 
 import lombok.RequiredArgsConstructor;
 
-@RestController
-@RequestMapping(value = "/api/school")
+//@RestController
+//@RequestMapping(value = "/api/school")
+
+//@CrossOrigin("*")
+
 @RequiredArgsConstructor
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", maxAge = 3600)
+@RestController
+@RequestMapping("/api/school")
 public class SchoolController {
     private final SchoolService schoolService;
 
